@@ -7,74 +7,83 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator-wrapper">
-        <!-- Logo Section -->
-        <div class="logo-section">
-            <img src="Rashi.jpeg" alt="Calculator Logo" class="calculator-logo">
+    <div class="main-container">
+        <!-- Left Section: Logo and Heading -->
+        <div class="left-section">
+            <div class="logo-container">
+                <img src="Rashi.jpeg" alt="Calculator Logo" class="logo">
+            </div>
+            <div class="heading-container">
+                <h1 class="heading">Calculator</h1>
+                <p class="subtitle">Professional Calculator App</p>
+            </div>
         </div>
 
-        <!-- Display Screen -->
-        <div class="display-screen">
-            <input type="text" id="input" class="input-display" readonly placeholder="">
-            <input type="text" id="display" class="display" readonly value="0">
-        </div>
+        <!-- Right Section: Calculator -->
+        <div class="calculator-wrapper">
+            <!-- Display Screen -->
+            <div class="display-screen">
+                <input type="text" id="input" class="input-display" readonly placeholder="">
+                <input type="text" id="display" class="display" readonly value="0">
+            </div>
 
-        <!-- Memory Functions Row -->
-        <div class="memory-row">
-            <button class="memory-btn" id="mc">MC</button>
-            <button class="memory-btn" id="mr">MR</button>
-            <button class="memory-btn" id="m-plus">M+</button>
-            <button class="memory-btn" id="m-minus">M−</button>
-            <button class="memory-btn" id="ms">MS</button>
-            <button class="memory-btn" id="m-menu">M▼</button>
-        </div>
+            <!-- Memory Functions Row -->
+            <div class="memory-row">
+                <button class="memory-btn" id="mc">MC</button>
+                <button class="memory-btn" id="mr">MR</button>
+                <button class="memory-btn" id="m-plus">M+</button>
+                <button class="memory-btn" id="m-minus">M−</button>
+                <button class="memory-btn" id="ms">MS</button>
+                <button class="memory-btn" id="m-menu">M▼</button>
+            </div>
 
-        <!-- Scientific Functions Row 1 -->
-        <div class="button-row">
-            <button class="func-btn">%</button>
-            <button class="func-btn">CE</button>
-            <button class="func-btn">C</button>
-            <button class="func-btn delete-btn">⌫</button>
-        </div>
+            <!-- Scientific Functions Row 1 -->
+            <div class="button-row">
+                <button class="func-btn">%</button>
+                <button class="func-btn">CE</button>
+                <button class="func-btn">C</button>
+                <button class="func-btn delete-btn">⌫</button>
+            </div>
 
-        <!-- Scientific Functions Row 2 -->
-        <div class="button-row">
-            <button class="func-btn">1/x</button>
-            <button class="func-btn">x²</button>
-            <button class="func-btn">√</button>
-            <button class="operator-btn">÷</button>
-        </div>
+            <!-- Scientific Functions Row 2 -->
+            <div class="button-row">
+                <button class="func-btn">1/x</button>
+                <button class="func-btn">x²</button>
+                <button class="func-btn">√</button>
+                <button class="operator-btn">÷</button>
+            </div>
 
-        <!-- Number Buttons Row 1 -->
-        <div class="button-row">
-            <button class="number-btn">7</button>
-            <button class="number-btn">8</button>
-            <button class="number-btn">9</button>
-            <button class="operator-btn">×</button>
-        </div>
+            <!-- Number Buttons Row 1 -->
+            <div class="button-row">
+                <button class="number-btn">7</button>
+                <button class="number-btn">8</button>
+                <button class="number-btn">9</button>
+                <button class="operator-btn">×</button>
+            </div>
 
-        <!-- Number Buttons Row 2 -->
-        <div class="button-row">
-            <button class="number-btn">4</button>
-            <button class="number-btn">5</button>
-            <button class="number-btn">6</button>
-            <button class="operator-btn">−</button>
-        </div>
+            <!-- Number Buttons Row 2 -->
+            <div class="button-row">
+                <button class="number-btn">4</button>
+                <button class="number-btn">5</button>
+                <button class="number-btn">6</button>
+                <button class="operator-btn">−</button>
+            </div>
 
-        <!-- Number Buttons Row 3 -->
-        <div class="button-row">
-            <button class="number-btn">1</button>
-            <button class="number-btn">2</button>
-            <button class="number-btn">3</button>
-            <button class="operator-btn">+</button>
-        </div>
+            <!-- Number Buttons Row 3 -->
+            <div class="button-row">
+                <button class="number-btn">1</button>
+                <button class="number-btn">2</button>
+                <button class="number-btn">3</button>
+                <button class="operator-btn">+</button>
+            </div>
 
-        <!-- Number Buttons Row 4 -->
-        <div class="button-row">
-            <button class="number-btn toggle-sign">+/−</button>
-            <button class="number-btn">0</button>
-            <button class="number-btn decimal-btn">.</button>
-            <button class="equals-btn">=</button>
+            <!-- Number Buttons Row 4 -->
+            <div class="button-row">
+                <button class="number-btn toggle-sign">+/−</button>
+                <button class="number-btn">0</button>
+                <button class="number-btn decimal-btn">.</button>
+                <button class="equals-btn">=</button>
+            </div>
         </div>
     </div>
 
