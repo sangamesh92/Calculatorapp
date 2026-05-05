@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.calculator-wrapper {
+    background: #2d2d2d;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 320px;
+    overflow: hidden;
+}
+
+.logo-section {
+    background: #1a1a1a;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.calculator-logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #3d3d3d;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.display-screen {
+    background: #1a1a1a;
+    padding: 12px;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.input-display {
+    width: 100%;
+    background: #1a1a1a;
+    border: none;
+    color: #999;
+    font-size: 0.9em;
+    text-align: right;
+    padding: 4px 0;
+    font-weight: 400;
+    outline: none;
+    min-height: 20px;
+}
+
+.display {
+    width: 100%;
+    background: #1a1a1a;
+    border: none;
+    color: #fff;
+    font-size: 2.5em;
+    text-align: right;
+    padding: 8px 0;
+    font-weight: 300;
+    outline: none;
+}
+
+.memory-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1px;
+    background: #1a1a1a;
+    padding: 1px;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.memory-btn {
+    background: #2d2d2d;
+    border: none;
+    color: #999;
+    padding: 8px 4px;
+    font-size: 0.65em;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-weight: 500;
+}
+
+.memory-btn:hover {
+    background: #3d3d3d;
+}
+
+.memory-btn:active {
+    background: #1f1f1f;
+}
+
+.button-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: #1a1a1a;
+    padding: 1px;
+}
+
+.number-btn,
+.func-btn,
+.operator-btn,
+.equals-btn {
+    border: none;
+    padding: 20px;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    color: #fff;
+}
+
+.number-btn {
+    background: #3d3d3d;
+}
+
+.number-btn:hover {
+    background: #4d4d4d;
+}
+
+.number-btn:active {
+    background: #2d2d2d;
+}
+
+.func-btn {
+    background: #3d3d3d;
+    color: #fff;
+}
+
+.func-btn:hover {
+    background: #4d4d4d;
+}
+
+.func-btn:active {
+    background: #2d2d2d;
+}
+
+.operator-btn {
+    background: #3d3d3d;
+    color: #fff;
+}
+
+.operator-btn:hover {
+    background: #4d4d4d;
+}
+
+.operator-btn:active {
+    background: #2d2d2d;
+}
+
+.equals-btn {
+    background: #0078d4;
+    font-weight: 600;
+}
+
+.equals-btn:hover {
+    background: #106ebe;
+}
+
+.equals-btn:active {
+    background: #005fa3;
+}
+
+.delete-btn {
+    background: #3d3d3d;
+}
+
+.delete-btn:hover {
+    background: #4d4d4d;
+}
+
+.delete-btn:active {
+    background: #2d2d2d;
+}
+
+.toggle-sign {
+    background: #3d3d3d;
+}
+
+.toggle-sign:hover {
+    background: #4d4d4d;
+}
+
+.toggle-sign:active {
+    background: #2d2d2d;
+}
+
+.decimal-btn {
+    background: #3d3d3d;
+}
+
+.decimal-btn:hover {
+    background: #4d4d4d;
+}
+
+.decimal-btn:active {
+    background: #2d2d2d;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .calculator-wrapper {
+        max-width: 100%;
+    }
+
+    .display {
+        font-size: 2em;
+    }
+
+    .calculator-logo {
+        height: 45px;
+        width: 45px;
+    }
+
+    .number-btn,
+    .func-btn,
+    .operator-btn,
+    .equals-btn {
+        padding: 18px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator-wrapper {
+        max-width: 100%;
+        border-radius: 4px;
+    }
+
+    .display {
+        font-size: 1.8em;
+        padding: 6px 0;
+    }
+
+    .display-screen {
+        padding: 10px;
+    }
+
+    .logo-section {
+        padding: 10px;
+    }
+
+    .calculator-logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    .input-display {
+        font-size: 0.8em;
+        padding: 2px 0;
+    }
+
+    .number-btn,
+    .func-btn,
+    .operator-btn,
+    .equals-btn {
+        padding: 16px;
+        font-size: 0.95em;
+    }
+
+    .memory-btn {
+        padding: 6px 2px;
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 360px) {
+    .display {
+        font-size: 1.5em;
+    }
+
+    .calculator-logo {
+        height: 35px;
+        width: 35px;
+    }
+
+    .number-btn,
+    .func-btn,
+    .operator-btn,
+    .equals-btn {
+        padding: 14px;
+        font-size: 0.9em;
+    }
+
+    .memory-row {
+        padding: 0;
+    }
+
+    .memory-btn {
+        padding: 5px 2px;
+        font-size: 0.55em;
+    }
+
+    .input-display {
+        font-size: 0.75em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .calculator-wrapper {
+        max-width: 380px;
+    }
+
+    .display {
+        font-size: 2.8em;
+    }
+
+    .calculator-logo {
+        height: 55px;
+        width: 55px;
+    }
+
+    .number-btn,
+    .func-btn,
+    .operator-btn,
+    .equals-btn {
+        padding: 22px;
+        font-size: 1.2em;
+    }
+
+    .memory-btn {
+        padding: 10px 6px;
+        font-size: 0.7em;
+    }
+}
+

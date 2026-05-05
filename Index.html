@@ -3,74 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Professional Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Main content -->
-    <main class="main-container">
-<!-- WSA  icon -->
- <div class="wsaicon-container">
-    <img src="Rashi.jpeg" alt="wsa-logo" class="Rashi-logo" style="height: 150px; width:150px;">
+    <div class="calculator-wrapper">
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <img src="Rashi.jpeg" alt="Calculator Logo" class="calculator-logo">
+        </div>
 
+        <!-- Display Screen -->
+        <div class="display-screen">
+            <input type="text" id="input" class="input-display" readonly placeholder="">
+            <input type="text" id="display" class="display" readonly value="0">
+        </div>
+
+        <!-- Memory Functions Row -->
+        <div class="memory-row">
+            <button class="memory-btn" id="mc">MC</button>
+            <button class="memory-btn" id="mr">MR</button>
+            <button class="memory-btn" id="m-plus">M+</button>
+            <button class="memory-btn" id="m-minus">M−</button>
+            <button class="memory-btn" id="ms">MS</button>
+            <button class="memory-btn" id="m-menu">M▼</button>
+        </div>
+
+        <!-- Scientific Functions Row 1 -->
+        <div class="button-row">
+            <button class="func-btn">%</button>
+            <button class="func-btn">CE</button>
+            <button class="func-btn">C</button>
+            <button class="func-btn delete-btn">⌫</button>
+        </div>
+
+        <!-- Scientific Functions Row 2 -->
+        <div class="button-row">
+            <button class="func-btn">1/x</button>
+            <button class="func-btn">x²</button>
+            <button class="func-btn">√</button>
+            <button class="operator-btn">÷</button>
+        </div>
+
+        <!-- Number Buttons Row 1 -->
+        <div class="button-row">
+            <button class="number-btn">7</button>
+            <button class="number-btn">8</button>
+            <button class="number-btn">9</button>
+            <button class="operator-btn">×</button>
+        </div>
+
+        <!-- Number Buttons Row 2 -->
+        <div class="button-row">
+            <button class="number-btn">4</button>
+            <button class="number-btn">5</button>
+            <button class="number-btn">6</button>
+            <button class="operator-btn">−</button>
+        </div>
+
+        <!-- Number Buttons Row 3 -->
+        <div class="button-row">
+            <button class="number-btn">1</button>
+            <button class="number-btn">2</button>
+            <button class="number-btn">3</button>
+            <button class="operator-btn">+</button>
+        </div>
+
+        <!-- Number Buttons Row 4 -->
+        <div class="button-row">
+            <button class="number-btn toggle-sign">+/−</button>
+            <button class="number-btn">0</button>
+            <button class="number-btn decimal-btn">.</button>
+            <button class="equals-btn">=</button>
+        </div>
     </div>
-    <!--title and calculator container -->
-    <div class="sub-container">
 
-        <!-- container -->
-         <div class="calculator-container">
-            <h1 class="header-container">Calculator-app</h1>
-          </div>
-            </div>
-            <!-- Background-circle -->
-             <Div class="Background-circle">
-
-             </Div>
-             <!-- input fields & output field -->
-                <div class="input-container">
-                    <input type="text" class="output-field"  id="dispay" readonly>
-                    <input type="text" class="input-field"  placeholder="input-feild" id="input-feild" readonly>
-
-                </div>
-                <!-- Button row -->
-                <section class="button-container">
-                    <button class="btn">AC</button>
-                    <button class="btn">=></button>
-                    <button class="btn">%</button>
-                    <button class="btn">^</button>
-                </section>
-                <!-- Buttons row 2 -->
-                <section class="button-container">
-                    <button class="btn">7</button>
-                    <button class="btn">8</button>
-                    <button class="btn">9</button>
-                    <button class="btn">/</button>
-                </section>
-                <!-- Buttons row 3 -->
-                <section class="button-container">
-                    <button class="btn">4</button>
-                    <button class="btn">5</button>
-                    <button class="btn">6</button>
-                    <button class="btn">*</button>  
-                </section>
-                <!-- Buttons row 4 -->
-                <section class="button-container">
-                    <button class="btn">1</button>
-                    <button class="btn">2</button>
-                    <button class="btn">3</button>
-                    <button class="btn">-</button>
-                </section>
-                <!-- Buttons row 5 -->
-                <section class="button-container">
-                    <button class="btn">0</button>
-                    <button class="btn">.</button>
-                    <button class="btn">=</button>
-                    <button class="btn">+</button>
-
-
-    <footer class="footer-name">
-        <p>&copy; 2026 My Calculator. All rights reserved.</p>
-    </footer>
-</main>
-
+    <script src="script.js"></script>
 </body>
 </html>
